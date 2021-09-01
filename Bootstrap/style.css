@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0; /* becomes applicable for all html elements*/
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background: var(--bggradient);
+}
+header,section{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+:root{
+    --Lobster-font:"Lobster",cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #FFB6C1,#b76e79 ,#a0522d );
+    --light-gray: rbga(255,255,255,0);
+    --text-marron: rgb(105, 94, 94);
+    --font-size: 5rem;
+    --bg-gradient: linear-gradient(to bottom, #bd755 ,#A0522D );
+}
+.header a{
+   font-family: var(--Lobster);
+   font-size: 0.9em;
+   color: lavender;
+
+}
+.header{
+    background: var(--bggradient);
+}
+.bg-light {
+    background-color: #f9f9f9;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: antiquewhite;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rbga(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+background: #eae6e6;
+}
+.dropdown-content a:hover{
+    background: #ddd;
+    color: royalblue;
+
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+header.nav-item:last-child{
+    padding-right: 10.5em;
+}
+header.nav-item{
+    padding: 0.9em;
+}
+.nav-item{
+    color: blueviolet;
+}
+.nav-item:hover{
+    color: blue;
+}.navbar-light .navbar-nav .nav-link:hover {
+    color: blueviolet;
+}
+header .row .col-md-4{
+    padding: 4.2vmin 1vmin;
+}
+
+.col-md-8.col-sm-12 {
+    justify-content: center;
+    align-items: center;
+    padding: 22vmin 1vmin;
+    padding-bottom: 40vmin;
+}
+header .row .col-md-4 img{
+    width: 90%;
+
+}
+header.container.col-md-8 h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+header.container.col-md-8.col-sm-12 h1{
+    font-size: vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+h1 {
+    font-weight: bold;
+    padding: 0.1em 0em;
+    font-size: 8vmin;
+}
+button.btn.btn-dark:hover {
+    background: deeppink;
+}
+/*section 1*/
+.section1{
+    padding: 20vmin 0;
+}
+.pray img{
+    opacity: 0.8;
+    width: 110%;
+    border-radius: 0.2em;
+    position: relative;
+}
+.col-md-6:last-child {
+position: relative;
+}
+.panel.text-left {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    text-align: left;
+    border-radius: 3px;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+.panel.text-left h1{
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+.panel.text-left p{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*section2*/
+.cover{
+width: 100%;
+height: 55vmin;
+background: url('autumn-landscape-nature-background-dried-flowers-water-drops-rain-field-banner-selective-focus-75038244.jpg');
+background-position: -24em -19em;
+background-size: 150%;
+background-repeat: no-repeat;
+position: relative;
+}
+.content.text-center{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+
+.cover  h1{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 6vmin;
+color: whitesmoke;
+}
+.cover p{
+    font-size: 2vmin;
+    color: white;
+}
+.card4{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+.card3{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+.card2{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+.card1{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1px 2px 50px 0px rgba(255,0,0,0.349);
+}
+.card1, .card2, .card3, .card4{
+    margin-top: -15vmin;
+}
+.card1 h1, .card2 h1, .card3 h1, .card4 h1{
+    font-size: var(--font-size);
+    color: var(--text-marron);
+}
+.card1 p, .card2 p, .card3 p, .card4 p{
+    font-family: monospace;
+}
+.Products-available.text-center{
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster-font);
+}
+.Products-available.text-center p{
+color: var(--light-black);
+font-size: 3vmin;
+padding-bottom: 10vmin;
+}
+.card.col-md-3{
+    width: 18rem;
+    height: 52vmin;
+    margin: 3vmin;
+    box-shadow: 6px 0px 0px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+.card.col-md-3 div{
+    padding: 0;
+    margin: 0;
+}
+.card-title{
+    background: rgba(208, 241,241, 0.199);
+    padding: 1.4rem 2.5rem;
+    font-size: 3vmin;
+}
+.card-text{
+    padding: 0.1vmin
+}
+.card-text em{
+    font-size: 3vmin;
+}
+/*section*/
+
+.section3{
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bg-gradient);
+}
+.col-md-12.col-sm-12 h1{
+    padding: 2em 0 0.5em 0;
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+.col-md-12.col-sm-12 p{
+    padding: 0.4em;
+    padding-bottom: 2em;
+    color: lightgrey;
+    font-size: 3vmin;
+}
+
+.desktop{
+    display: inline-block;
+    border-radius: 3em;
+    background:lightgrey;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+.text.text-left h3{
+    font-size: 4vmin;
+}
+.text.text-left p{
+    font-size: 2vmin;
+}
+/*section 4*/
+h1.text-dark {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+.col-md-4.col-12 {
+    width: 22rem;
+    margin-top: 10vmin;
+}
+p.card-text {
+    padding: 0.5em;
+}
+p.card-text {
+    padding: 0.5em;
+}
+
+/*footer*/
+footer{
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+span {
+    color: #ff512f;
+}
+input.form-control.bg-dark.text-white {
+    border: none;
+}
+input.form-control.bg-dark.text-white::placeholder{
+    color: antiquewhite!important;
+}
+.input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+@media only screen and(max-width: 768px){
+    header.nav-brand{
+        padding-left: 1rem;
+    }
+    .col-md-6.panel.text-left {
+        position: initial;
+        height: initial;
+        width: initial;
+    }
+    .pray img{
+        position:initial;
+        height: initial;
+        width: initial;
+    }
+    .cover {
+        background-position: -25vmin -10vmin;
+    }
+    .card1, .card2, .card3, .card4 {
+        width: 10rem;
+        height: 8rem;
+    }
+  
+}

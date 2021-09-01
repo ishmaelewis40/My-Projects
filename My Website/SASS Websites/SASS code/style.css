@@ -1,0 +1,10 @@
+.c-header {
+  position: relative;
+  color: #f50e0e;
+  background-color: midnightblue;
+}
+.c-header .header-wrap {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #cd7b66;
+}/*# sourceMappingURL=style.css.map */

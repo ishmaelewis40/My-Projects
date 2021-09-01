@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+        </style>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <div class="style">
+        <div class="nav-bar">
+            <div class="logo"><h1>J.L.D</h1><p> Perfection In Mind</p></div>
+            <button type="button">Contact Me</button>
+
+        </div>
+        <div class="content">
+            <small>Welcome To My</small>
+            <h1>Portfolio Website</h1>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            <button type="button">Explore</button>
+        </div>
+        <div class="sidebar">
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            <div class="content-links">
+                <ul id="menuItems">
+                    <a href=""><i class="material-icons">collections_bookmark</i>
+                    <br>
+                    <li><a href="projects page.html">Projects</li></a>
+                    <br>
+                    <a href="certificate Page.html"><i class="material-icons">school</i>
+                    <li>Certificates</a></li>
+                    <br>
+                    <a href=""><i class="material-icons">person</i>
+                    <li>Information</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="comet">
+            <img src="satelite.png" alt="">
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+    
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        </script>
+</body>
+</html>

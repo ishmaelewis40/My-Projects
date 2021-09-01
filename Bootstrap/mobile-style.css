@@ -1,0 +1,18 @@
+@media only screen and(max-width: 768px){
+    header.nav-brand{
+        padding-left: 1rem;
+    }
+    .panel.text-left {
+        position: initial;
+        height: initial;
+        width: initial;
+    }
+    .cover {
+        background-position: -25vmin -10vmin;
+    }
+    .card1, .card2, .card3, .card4 {
+        width: 10rem;
+        height: 8rem;
+    }
+  
+}

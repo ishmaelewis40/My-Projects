@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: sans-serif;
+}
+.style{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover; /*ccovers the entire screen*/
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.nav-bar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+
+}
+button:hover{
+    color: #000000;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.5ms;
+}
+
+.content{
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%); /*makes the text perfetly center vertically, - % pushes text up the page, % pushes it down the page*/
+    z-index: 2;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0px 30px;
+    line-height: 80px;
+    font-family: 'Oswald', sans-serif;
+}
+.sidebar{
+    width: 100px;
+    height: 100vh;
+    background: linear-gradient( #001a1d,#000c42,#000e4d);
+    position: absolute;
+    right: 0; /*puts side bar on right hand side of the page*/
+    top: 0;
+}
+.menu-icon{
+    display: block;
+    color: rgb(251, 253, 253);
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+
+}
+.content-links{
+    width: 25px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.content-links ul{
+    display: block;
+    margin-top: 25px;
+    color: #fbfcfd;
+    list-style-type: none;
+    text-align: center;
+    
+}
+.content-links ul li{
+    margin-right: 20px; 
+    transform: translateX(-20px);
+    padding-top: 10px;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+
+}
+.comet img{
+    width: 150px; 
+    animation: comet 10s linear  infinite ; 
+}
+.comet{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 80px;
+}
+@keyframes comet{
+        0%{
+            transform: translateX(80vh);
+            opacity: 1;
+        }
+        12.5%{
+            opacity: 1;
+        }
+        25%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        } 
+        100%{
+            transform: translateX(-80vh);
+            opacity: 0;
+        }
+    }
+.comets img:nth-child(1){ /*this will select the first image*/
+    animation-delay: 1s;
+
+}
