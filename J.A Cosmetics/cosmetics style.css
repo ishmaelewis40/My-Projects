@@ -1,0 +1,269 @@
+*{
+    margin: 0; /* becomes applicable for all html elements*/
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#fff ;
+    font-family: 'Dancing Script', cursive;
+}
+.T-logo{
+    font-size: 40px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+nav{
+    flex: 1;   /*This makes all the text go to the right side of the page.*/
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block; /* inline block makes the text line side by side horizontally*/
+    margin-right: 20px; /*margin spaces the text apart*/
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;/* removes underlining*/
+    color: #FFD700;
+}
+#cart{
+    align-items: center;
+    padding-bottom: 20px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px; /*padding allows the text to be displayed equal distance on the page*/
+    padding-right: 25px;
+}
+.row{
+    display: flex; /*This makes the image go to the right of the page and separates the text from the image and aligns both elements*/
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-1 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #c71585;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: transition 0.5s;
+}
+.btn:hover{
+    background: hotpink;
+}
+.header{
+    background: radial-gradient(#fff,#b76e);
+}
+.header row{
+    margin-top: 70px;
+}
+.categores{
+    margin: 70px 0;
+}
+.col-2{
+    flex-basis: 30%; /*makes images align*/
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-2 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-3{
+    flex-basis: 25%; /*4 images need to fit on the page so flex 25%*/
+    padding: 10px;
+    min-width: 250px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+
+}
+.col-3 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: "";
+    background: #c71585;
+    width: 90px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* so its on center from the x axis*/
+}
+h4{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.col-3 p{
+    font-size: 16px;
+}
+.ration .fa{
+    color: #FFD700;
+}
+.col-3:hover{
+    transform: translateY(-5px);
+
+}
+.offer{
+    background: radial-gradient(#fff,#b76e);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 30px 0;
+    text-align: center;
+}
+.testimonial{
+    padding-top: 100px;
+    font-family: monospace, sans-serif;
+    font-size: 12px;
+    color: rgb(10, 9, 9);
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.testimonial .col-3 img{
+    width: 40px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #c71585;
+}
+.footer{
+    background:#b76e;
+    color: #FFD700;
+    font-size: 14px;
+    padding: 60px  0 20px;
+}
+.footer h3{
+    color: #FFD700;
+    margin-bottom: 20px;
+
+}
+.footer-col-1, .footer-col-2, .footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+    font-family: monospace, sans-serif;
+    color: rgb(10, 10, 10);
+}
+.footer-col-2{
+
+    text-align: center;
+    font-family: monospace, sans-serif;
+}
+.footer-col-2 a{
+    flex-basis: 33%;
+    text-align: center;
+    font-family: monospace, sans-serif;
+    color: black;
+
+}
+.footer-col-2 a:hover{
+    background: red;
+    border-style: none;
+    border: none;
+
+}
+.footer-col-3{
+    flex-basis: 33%;
+    text-align: center;
+    color: rgb(12, 11, 11);
+    font-family: monospace, sans-serif;
+
+}
+.footer-col-3 h3{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(12, 11, 11);
+}
+ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background:black;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+    font-family: monospace, sans-serif;
+    color: black;
+
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*----media query---->*/
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #FFD700;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
